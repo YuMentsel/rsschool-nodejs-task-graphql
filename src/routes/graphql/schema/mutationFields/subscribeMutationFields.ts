@@ -1,6 +1,6 @@
 import { GraphQLBoolean, GraphQLNonNull } from 'graphql';
 import { UUIDType } from '../../types/uuid.js';
-import { UserSubscribedTo } from '../../types/common.js';
+import { UserSubscribedTo } from '../../types/interfaces.js';
 import { UserType } from '../../types/users/user.js';
 
 export const subscribeMutationFields = {

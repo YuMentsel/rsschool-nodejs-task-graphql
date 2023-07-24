@@ -1,5 +1,5 @@
 import { GraphQLBoolean, GraphQLNonNull } from 'graphql';
-import { ChangePost, CreatePost, ID } from '../../types/common.js';
+import { ChangePost, CreatePost, ID } from '../../types/interfaces.js';
 import { PostType } from '../../types/posts/post.js';
 import { CreatePostInputType, ChangePostInputType } from '../../types/posts/postInput.js';
 import { UUIDType } from '../../types/uuid.js';

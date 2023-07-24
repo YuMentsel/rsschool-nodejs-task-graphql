@@ -1,7 +1,9 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, User } from '@prisma/client';
+import { DataLoaders } from '../loaders/dataLoaders.js';
 
 export interface Context {
   prisma: PrismaClient;
+  dataLoaders: DataLoaders;
 }
 
 export interface ID {
@@ -60,4 +62,14 @@ export interface ChangeUser {
 export interface UserSubscribedTo {
   userId: string;
   authorId: string;
+}
+
+interface Subs {
+  subscriberId: string;
+  authorId: string;
+}
+
+export interface UserSubs extends User {
+  userSubscribedTo?: Subs[];
+  subscribedToUser?: Subs[];
 }

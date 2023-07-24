@@ -1,5 +1,5 @@
 import { GraphQLBoolean, GraphQLNonNull } from 'graphql';
-import { ChangeProfile, CreateProfile, ID } from '../../types/common.js';
+import { ChangeProfile, CreateProfile, ID } from '../../types/interfaces.js';
 import { UUIDType } from '../../types/uuid.js';
 import { ProfileType } from '../../types/profiles/profile.js';
 import {

@@ -7,6 +7,5 @@ export const MemberType = new GraphQLObjectType({
     id: { type: MemberTypeIdEnum },
     discount: { type: new GraphQLNonNull(GraphQLFloat) },
     postsLimitPerMonth: { type: new GraphQLNonNull(GraphQLInt) },
-    // profiles: {type: new GraphQLList(ProfileType)}
   }),
 });

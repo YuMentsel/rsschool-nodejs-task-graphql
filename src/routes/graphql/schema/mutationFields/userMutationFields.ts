@@ -1,5 +1,5 @@
 import { GraphQLBoolean, GraphQLNonNull } from 'graphql';
-import { ChangeUser, CreateUser, ID } from '../../types/common.js';
+import { ChangeUser, CreateUser, ID } from '../../types/interfaces.js';
 import { UUIDType } from '../../types/uuid.js';
 import { UserType } from '../../types/users/user.js';
 import { CreateUserInputType, ChangeUserInputType } from '../../types/users/userInput.js';
